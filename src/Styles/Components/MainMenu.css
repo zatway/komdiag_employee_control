@@ -1,0 +1,18 @@
+.main-menu {
+    position: fixed;
+    top: 1px;
+    left: 305px;
+    display: flex;
+    flex-direction: row;
+    transition: left 0.3s ease;
+}
+
+.alarm-button {
+    background-color: #282c34 !important;
+    font-size: 10px !important;
+}
+
+.alarm-button:hover {
+    background-color: rgba(131, 246, 8, 0.75) !important;
+}
+
