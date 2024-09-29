@@ -8,9 +8,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import { removeAllTabs, removeTab, setCurrentIndex } from '../Redux/Reducers/TabsSlice';
 import { AppState } from '../Redux/Store';
 import '../Styles/Components/MainTabs.css';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -74,11 +71,11 @@ const MainTabs: React.FC = () => {
 
     const renderTabContent = (contentId: string) => {
         switch (contentId) {
-            case 'objects':
+            case 'employeeList':
+                return 'лист';
+            case 'companyReglament':
                 return '';
-            case 'desktop':
-                return '';
-            case 'archive':
+            case 'newsCompany':
                 return '';
             default:
                 return null;
@@ -89,7 +86,7 @@ const MainTabs: React.FC = () => {
         <Box
             className={`main-tabs`}
         >
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider', border: "2px solid black", width: "100%"}}>
                 <Tabs
                     value={value}
                     onChange={handleChange}

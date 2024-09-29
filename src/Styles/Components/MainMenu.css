@@ -1,9 +1,12 @@
 .main-menu {
-    position: fixed;
-    top: 1px;
-    left: 305px;
+    border-right: 3px #131418 solid;
+    border-left: 3px #131418 solid;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
     transition: left 0.3s ease;
 }
 

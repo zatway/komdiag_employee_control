@@ -59,22 +59,6 @@ const tabsSlice = createSlice({
                 state.currentIndex = state.tabs.length - 1;
             }
         },
-        updateLabels: (
-            state,
-            action: PayloadAction<{
-                t: TFunction;
-            }>,
-        ) => {
-
-            const tabs = tabsData();
-
-            state.tabs.forEach((tab) => {
-                const localizedTab = tabs.find((t) => t.contentId === tab.contentId);
-                if (localizedTab) {
-                    tab.label = localizedTab.label;
-                }
-            });
-        },
         updateTab: (
             state,
             action: PayloadAction<{
@@ -112,6 +96,6 @@ const tabsSlice = createSlice({
     },
 });
 
-export const { addTab, removeTab, setCurrentIndex, removeAllTabs, updateTab, updateLabels } =
+export const { addTab, removeTab, setCurrentIndex, removeAllTabs, updateTab } =
     tabsSlice.actions;
 export default tabsSlice.reducer;

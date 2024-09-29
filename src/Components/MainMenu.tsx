@@ -2,15 +2,12 @@ import React, { useEffect } from 'react';
 import { Button } from '@mui/material';
 import '../Styles/Components/MainMenu.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { AppState } from '../Redux/Store';
-import { addTab, updateLabels } from '../Redux/Reducers/TabsSlice';
-import { useTranslation } from 'react-i18next';
-import { TFunction } from 'i18next';
+import { addTab } from '../Redux/Reducers/TabsSlice';
 
 export const tabsData = () => [
-    { label: '', contentId: 'objects' },
-    { label:  '', contentId: 'desktop' },
-    { label: '', contentId: 'archive' },
+    { label: 'Список сотрудников', contentId: 'employeeList' },
+    { label:  'Регламент компании', contentId: 'companyReglament' },
+    { label: 'Новости компании', contentId: 'newsCompany' },
 ];
 
 const MainMenu: React.FC = () => {
