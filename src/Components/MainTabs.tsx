@@ -72,7 +72,7 @@ const MainTabs: React.FC = () => {
     const renderTabContent = (contentId: string) => {
         switch (contentId) {
             case 'employeeList':
-                return 'лист';
+                return ;
             case 'companyReglament':
                 return '';
             case 'newsCompany':

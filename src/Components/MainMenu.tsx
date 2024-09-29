@@ -15,6 +15,13 @@ const MainMenu: React.FC = () => {
 
     const handleAddTab = (contentId: string) => {
         dispatch(addTab({ contentId, isOpen: true }));
+        console.log(`Adding tab with contentId: ${contentId}`);
+        console.log(`Adding tab with contentId: ${contentId}`);
+        console.log(`Adding tab with contentId: ${contentId}`);
+        console.log(`Adding tab with contentId: ${contentId}`);
+        console.log(`Adding tab with contentId: ${contentId}`);
+        console.log(`Adding tab with contentId: ${contentId}`);
+        console.log(`Adding tab with contentId: ${contentId}`);
     };
 
     useEffect(() => {
